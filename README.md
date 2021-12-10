@@ -14,12 +14,12 @@ ssh -i .ssh/labsuser.pem ubuntu@ec2-xx-xx-xx-xx.compute-1.amazonaws.com    [ec-x
 chmod 400 authorized_keys if permissions still deny access.
 
 4.    Edit the stopped machine in Actions ---> instance setting ----> edit user data like with the smaller key from the authorized key section as in the code (optional step might not be required if you have a default already or got access) from previous steps
-Save the default from inside the textbox first. This is a difficult step no way back.
+Save the default from inside the textbox first. This is a difficult step no way back. 
 
 Inside directory .ssh/$   I used ls command to list files. The end result is I have 2 files labsuser.pem and authorized_keys files. If there is a vockey.pem here I suggest to keep it because it is a similar to a backup private key. labsuser.pem is a private key. authorized_keys is a public key. 
 
 For the textBox called edit user data amend this code with a copy-paste of the authorized_keys char data (about 20 characters file compared to the regular private key).
-labsuser.pem key is approximately 40-50 chars in length of key.
+labsuser.pem key is approximately 40-50 chars in length of key. Note that in edit user data file the name of the OS_USER is the name assigned to the virtual machine. Change the name at the = operator where it states OS_USER=ubuntu.
 
 Content-Type: multipart/mixed; boundary="//"
 MIME-Version: 1.0--//
