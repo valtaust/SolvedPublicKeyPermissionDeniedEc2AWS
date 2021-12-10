@@ -21,6 +21,8 @@ Inside directory .ssh/$   I used ls command to list files. The end result is I h
 For the textBox called edit user data amend this code with a copy-paste of the authorized_keys char data (about 20 characters file compared to the regular private key).
 labsuser.pem key is approximately 40-50 chars in length of key. Note that in edit user data file the name of the OS_USER is the name assigned to the virtual machine. Change the name at the = operator where it states OS_USER=ubuntu.
 
+User data below this line--------------------------------->
+
 Content-Type: multipart/mixed; boundary="//"
 MIME-Version: 1.0--//
 Content-Type: text/cloud-config; charset="us-ascii"
